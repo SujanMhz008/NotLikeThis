@@ -17,15 +17,15 @@ fetch('http://localhost:3000/houses/v1/getAllHouses', {
                 localStorage.setItem('houseName'+houses.houseId, houses.houseName);
                 localStorage.setItem('contactInfo'+houses.houseId, houses.contactInfo);
                 localStorage.setItem('price'+houses.houseId, houses.price);
-                return oneRow += " <tr>" +
+                return oneRow += " <tr class='text-light'>" +
                     "<td>" + houses.houseId + "</td>" +
                     "<td>" + houses.houseName + "</td>" +
                     "<td>" + houses.address + "</td>" +
                     "<td>" + houses.contactInfo + "</td>" +
                     "<td>" + houses.price + "</td>	" +
                     "<td>" + houses.categoryCategoryId + "</td>	" +
-                    "<td><button type='del' id='buttonTable'  onclick='deletehouse(" + houses.houseId + ")' class='btn-danger'>Delete</button></td>" +
-                    "<td><button type='del' id='buttonTable'  onclick='updateHouse(" + houses.houseId + ")' class='btn-danger'>Update</button></td>" +
+                    "<td><button type='del' id='buttonTable'  onclick='deletehouse(" + houses.houseId + ")' class='btn-light'>Delete</button></td>" +
+                    "<td><button type='del' id='buttonTable'  onclick='updateHouse(" + houses.houseId + ")' class='btn-light'>Update</button></td>" +
                     "</tr>";
             });
 

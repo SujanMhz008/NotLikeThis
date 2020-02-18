@@ -12,7 +12,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('#updateevent').click(function () {
+    $('#buttonUpdate').click(function () {
+        const houseId = localStorage.getItem('houseId');
         const houseName = $('#houseName').val();
         const contactInfo = $('#contactInfo').val();
         const price = $('#price').val();
@@ -22,20 +23,22 @@ $(document).ready(function () {
             alert("Please fill all field");
         }
         else {
-            let url = 'http://localhost:3000/houses/v1/';
-            let data = {eventid:eventid,eventname: eventname, eventaddress: eventaddress,eventstarttime:eventstarttime,eventendtime:eventendtime, eventdate: eventdate };
+            let url = 'http://localhost:3000/houses/v1/updateHouse/' + houseId;
+            let data = {houseName: houseName, contactInfo: contactInfo, price:price, categoryId:categoryId};
             fetch(url, {
                 method: 'put',
                 headers: {
+                    "authorization": localStorage.getItem('token'),
                     "Content-type": "application/json"
                 },
                 body: JSON.stringify(data)
             })
                 .then(response => response.json())
                 .then(function (data) {
-                    if (data.status == "success") {
-                        alert("Updated Successfully")
-                        window.location.href = "viewevents.html"
+                    console.log(data)
+                    if (data.status == "200") {
+                        alert(data.message)
+                        window.location.href = "admin_Dashboard.html"
                     } else {
                         alert("failed")
                     }

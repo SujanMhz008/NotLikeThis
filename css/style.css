@@ -2,9 +2,7 @@ body {
     line-height:1;
 }
 
-nav ul {
-    list-style:none;
-}
+
 a {
     margin:0;
     padding:0;
@@ -26,26 +24,7 @@ header
     width: auto;
     float: left;
 }
-nav{
-    float: right;
-    padding: 0px 0px 0px 50px;
-    margin-right: 40px;
-}
-nav ul{
-    margin-top:34px;
-}
-nav ul li{
-    display: inline-block;
-    margin-left:20px;
-    list-style: none;
-}
-nav ul li a{
-    color: bisque;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    
-}
+
 a:hover{
         transition-property: all;
         transition-duration: 700ms;
@@ -260,4 +239,9 @@ a:hover{
 		line-height: 1.8;
 		text-decoration: none;
 		color:  inherit;
+	}
+
+	.carouselExampleIndicators{
+		height: 200px;
+
 	}

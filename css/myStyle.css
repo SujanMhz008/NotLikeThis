@@ -11,8 +11,7 @@ text[type=register_form],[type=update_form]{
   margin-left: 40px;
   font-size: 40px;
   color: white;
-  background-color: #cf0e0e;
-}
+  }
 text[type=update_form]{
   margin-left: 60px;
   font-size: 40px;
@@ -23,7 +22,7 @@ text[type=login_form]{
   margin-left: 75px;
   font-size: 40px;
   color: white;
-  background-color: #cf0e0e;
+  
 }
 input,input[type=text],input[type=password],input[type=date],input[type=time],input[type=number]{
   border-radius: 10px;
@@ -165,7 +164,7 @@ a:hover {
     height: 100%;
   }
 
-#buttonRent, #buttonAdd, #buttonUpdate{
+#buttonRent, #buttonAdd, #buttonUpdate, #button1{
   color: white;
   background-color:#000;
   padding: 10px 0px;
