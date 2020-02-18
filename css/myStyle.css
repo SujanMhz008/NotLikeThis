@@ -1,0 +1,187 @@
+.container {
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+    width: 450px;
+    margin: 10% 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:gray;
+}
+text[type=register_form],[type=update_form]{
+  margin-left: 40px;
+  font-size: 40px;
+  color: white;
+  background-color: #cf0e0e;
+}
+text[type=update_form]{
+  margin-left: 60px;
+  font-size: 40px;
+  color: white;
+  background-color: #cf0e0e;
+}
+text[type=login_form]{
+  margin-left: 75px;
+  font-size: 40px;
+  color: white;
+  background-color: #cf0e0e;
+}
+input,input[type=text],input[type=password],input[type=date],input[type=time],input[type=number]{
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px;
+  margin: 0 22px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+label[name=label]{
+  width: 90%;
+  margin: 0px 30px 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #ffffff
+}
+#updateevent{
+  color: white;
+  background-color:darkblue;
+  padding: 10px 10px;
+  border: none;
+  margin-left: 25%;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+
+#button{
+  color: white;
+  background-color:darkblue;
+  padding: 10px 10px;
+  border: none;
+  margin-left: 25%;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+
+#cancelevent{
+  color: white;
+  background-color:darkblue;
+  padding: 10px 10px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 25%;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+label[name=event]{
+  margin-left: 200px;
+  margin-top: 100px;
+  box-sizing: border-box;
+  padding: 14px 0px;
+  width: 20%;
+}
+
+select[type=select]{
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px;
+  margin: 0 22px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button[type=clickupt]{
+  color: white;
+  background-color:green;
+  padding: 10px 0px;
+  margin: 20px ;
+  margin-left: 250px;
+  border: none;
+  border-radius: 10px;
+  width: 10%;
+}
+
+button[type=cncl]{
+  color: white;
+  background-color:green;
+  padding: 12px 0px;
+  margin-left: 112px;
+  border: none;
+  border-radius: 10px;
+  width: 50%;
+}
+label[name=events]{
+  padding: 14px 0px;
+  margin: 20% ;
+  box-sizing: border-box;
+  border: none;
+  width: 20%;
+  color: black;
+}
+
+#button{
+  color: white;
+  background-color:green;
+  padding: 14px 0px;
+  margin: 8px 25% ;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+button:hover {
+    opacity: 0.6;
+    background-color: darkblue;
+  }
+text[type=text]{
+  padding-left:10%; 
+  font-size: 20px;
+}
+a[type=click]{
+  margin: 1%;
+  font-size: 20px;
+  color: blue;
+}
+#update{
+  color: white;
+  background-color:green;
+  padding: 14px 0px;
+  margin: 8px 25% ;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+a:hover {
+  opacity: 0.6;
+  color:darkred;
+}
+
+  .full{
+    background-image: url("img/Zoro.jpg");
+    width: 100%;
+    height: 100%;
+  }
+
+#buttonRent, #buttonAdd, #buttonUpdate{
+  color: white;
+  background-color:#000;
+  padding: 10px 0px;
+  margin: 8px    ;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.btn-danger{
+  color: white;
+  background-color:#000;
+  padding: 10px 10px;
+  margin: 8px    ;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
